@@ -1,0 +1,8 @@
+Make a faulty calculator that does wrong calcualtions 10% times and in the rest works like a normal calculator
+
++ > -
+* > +
+- > /
+/ > **
+
+but only 10% times...

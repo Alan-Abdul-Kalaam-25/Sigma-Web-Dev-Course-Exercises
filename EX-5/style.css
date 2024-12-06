@@ -1,0 +1,130 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --navcolor: #000000fe;
+  --txtcolor: #ffffff;
+  --mainbgcolor: #535353;
+  --bgboxes: #00a018;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--mainbgcolor);
+  position: relative;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: var(--navcolor);
+  color: var(--txtcolor);
+}
+
+header nav .logo-box {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--txtcolor);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 20px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 2px solid var(--txtcolor);
+}
+
+main {
+  background-color: var(--mainbgcolor);
+  color: var(--txtcolor);
+}
+
+main .boxes {
+  background-color: var(--bgboxes);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 2em;
+}
+
+main .boxes .box {
+  width: 500px;
+  height: 500px;
+}
+
+main .boxes .box1 {
+  background-color: lightblue;
+}
+
+main .boxes .box2 {
+  background-color: cyan;
+}
+
+main .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: rgb(144, 113, 255);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+main .circle {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(38, 103, 255);
+  border-radius: 50%;
+  border: 5px solid rgb(0, 42, 255);
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  background-color: var(--navcolor);
+  color: var(--txtcolor);
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,1 @@
+Make a layout with a navbar, footer, main body and a fixed box at the very bottom right.

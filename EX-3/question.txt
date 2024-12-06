@@ -1,0 +1,1 @@
+Design the given card in pure HTML and CSS

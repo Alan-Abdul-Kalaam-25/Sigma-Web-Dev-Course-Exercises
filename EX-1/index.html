@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Player - video and audio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow-x: hidden;
+      }
+      .videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid blue;
+        background-color: aqua;
+        margin-bottom: 10px;
+      }
+      .audios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid green;
+        background-color: chartreuse;
+      }
+      .title {
+        font-size: 45px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        background-color: black;
+      }
+      video {
+        margin: 10px 0;
+        width: 800px;
+      }
+
+      audio {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="videos">
+      <h1 class="title">Videos Section</h1>
+      <video src="1.mp4" controls loop muted></video>
+      <video src="1.mp4" controls loop muted></video>
+      <video src="1.mp4" controls loop muted></video>
+      <video src="1.mp4" controls loop muted></video>
+      <video src="1.mp4" controls loop muted></video>
+      <video src="1.mp4" controls loop muted></video>
+    </div>
+    <div class="audios">
+      <h1 class="title">Audios Section</h1>
+      <audio src="1.mp3" controls loop muted></audio>
+      <audio src="1.mp3" controls loop muted></audio>
+      <audio src="1.mp3" controls loop muted></audio>
+      <audio src="1.mp3" controls loop muted></audio>
+      <audio src="1.mp3" controls loop muted></audio>
+      <audio src="1.mp3" controls loop muted></audio>
+    </div>
+  </body>
+</html>

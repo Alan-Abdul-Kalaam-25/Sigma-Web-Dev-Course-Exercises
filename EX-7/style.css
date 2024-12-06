@@ -1,0 +1,73 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.box {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-color: #ececec;
+  border-radius: 5px;
+  border: 2px solid #ececec;
+  transition: all 0.4s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.2);
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.box .code {
+  font-size: 8px;
+  font-family: monospace;
+}
+
+.box .lang-eng {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.box button {
+  border: none;
+  background-color: #00c200;
+  color: #ffffff;
+  padding: 7px 13px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid #00c200;
+  transition: all 0.4s ease-in-out;
+}
+
+.box button:hover {
+  color: #00c200;
+  background-color: #ffffff;
+  border: 2px solid #00c200;
+}
+
+.box .sha {
+  font-size: 15px;
+  font-weight: bold;
+}

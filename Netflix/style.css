@@ -1,0 +1,49 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, arial, "Segoe UI", Verdana;
+  color: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid blue;
+  position: absolute;
+  top: 0;
+}
+
+nav .logo-box {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid green; */
+}
+
+nav .logo-box img {
+  width: 100%;
+}
+
+.hero {
+  background-image: url(./assets/images/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 80vh;
+}

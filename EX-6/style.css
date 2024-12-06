@@ -1,0 +1,61 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+nav .logo-box {
+  padding: 5px;
+}
+
+nav .logo-box img {
+  width: 180px;
+}
+
+nav .links-box {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .links-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #535353;
+}
+
+nav .links-box a:hover {
+  color: #000000;
+}
