@@ -1,16 +1,19 @@
-let bgClrs = ["blue", "green", "yellow", "orange", "purple"];
-let clrs = ["cyan", "lime", "pink", "violet", "red"];
+function getRandomColor() {
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
 
-function getRandomIndex(array) {
-  return Math.floor(Math.random() * array.length);
+  let maincolor =
+    "#" + red.toString(16) + green.toString(16) + blue.toString(16);
+  return maincolor;
 }
 
 function setRandomColors() {
   let boxes = document.querySelectorAll(".box");
 
   boxes.forEach((box) => {
-    let randomBgColor = bgClrs[getRandomIndex(bgClrs)];
-    let randomTextColor = clrs[getRandomIndex(clrs)];
+    let randomBgColor = getRandomColor();
+    let randomTextColor = getRandomColor();
 
     box.style.backgroundColor = randomBgColor;
     box.style.color = randomTextColor;
