@@ -1,0 +1,7 @@
+function createCard(title, cName, views, monthsOld, duration, thumbnail){
+    // Finish this function
+}
+
+You need to design the given card.png and add data in it by using the above function and whenever the function
+ is called the card should be visible and if multiple calls are made then all the cards should be in vertical 
+ order with the the data given in them.

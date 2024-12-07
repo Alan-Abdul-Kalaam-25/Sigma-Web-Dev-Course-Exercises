@@ -1,0 +1,89 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana, arial, sans-serif, "Times New Roman";
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  gap: 20px 0;
+}
+
+.container .card {
+  /* width: 100%; */
+  display: flex;
+  /* justify-content: center; */
+  gap: 0 20px;
+  background-color: #272727;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.container .card .num-box {
+  align-self: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 50%;
+  /* border: 2px solid green; */
+}
+
+.container .card .thumbnail-box {
+  /* border: 2px solid lime; */
+  border-radius: 12.5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .card .thumbnail-box img {
+  width: 320px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.container .card .thumbnail-box .duration-box {
+  background-color: #000000;
+  filter: opacity(0.8);
+  padding: 4px;
+  border-radius: 6.25px;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+.container .card .data-box {
+  /* border: 2px solid lime; */
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  gap: 20px;
+}
+
+.container .card .data-box .title-box {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container .card .data-box .other-data-box {
+  color: #a3a3a3;
+}
+
+.container .card .options-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid lime; */
+  padding: 0 10px;
+  /* line-height: 15px; */
+}
