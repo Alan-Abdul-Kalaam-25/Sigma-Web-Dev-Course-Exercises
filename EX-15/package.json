@@ -1,0 +1,12 @@
+{
+  "name": "files-organizer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Utility to manage files in a specific folder named on it's extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan",
+  "license": "ISC"
+}
